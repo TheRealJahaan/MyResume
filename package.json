@@ -1,0 +1,24 @@
+{
+  "name": "myresume",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Jahaan Suthar's resume as a fast, accessible static website with an auto-generated PDF.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "pdf": "node scripts/pdf.mjs",
+    "dev": "npm run build && npx --yes serve@14.2.4 dist",
+    "test": "node --test test/*.test.mjs",
+    "lint": "prettier --check . && html-validate dist/index.html",
+    "format": "prettier --write .",
+    "ci": "npm test && npm run build && npm run lint"
+  },
+  "devDependencies": {
+    "html-validate": "9.7.1",
+    "playwright": "1.56.1",
+    "prettier": "3.6.2"
+  }
+}
