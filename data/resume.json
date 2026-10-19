@@ -1,0 +1,100 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jahaan Suthar",
+    "label": "iOS Developer",
+    "headline": "B.Tech in Computer Science and Engineering · VIT Chennai",
+    "email": "jahaansuthar@gmail.com",
+    "url": "https://jahaan.cc.cd",
+    "summary": "Driven Computer Science student and highly adaptive iOS Developer specializing in engineering performant, highly responsive native applications using Swift and SwiftUI. Combines strong foundational knowledge of Data Structures and MVVM architecture with cutting-edge, AI-assisted development workflows to accelerate time-to-market. Recognized as a high-velocity learner capable of breaking down, mastering, and applying complex new frameworks or production systems within 24-hour cycles to transform abstract concepts into production-ready software solutions.",
+    "location": { "countryCode": "IN", "region": "India" },
+    "profiles": [
+      { "network": "GitHub", "username": "TheRealJahaan", "url": "https://github.com/TheRealJahaan" },
+      {
+        "network": "LinkedIn",
+        "username": "jahaan-suthar",
+        "url": "https://www.linkedin.com/in/jahaan-suthar-648320320"
+      },
+      { "network": "Portfolio", "username": "jahaan.cc.cd", "url": "https://jahaan.cc.cd" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Wipro × InspireLeap",
+      "position": "Software Development Intern",
+      "startDate": "2026-05",
+      "highlights": [
+        "Developed clean, high-performance logic across Python programming assignments and production software concepts.",
+        "Collaborated on algorithmic problem-solving paradigms to systematically optimize core data structures.",
+        "Built and deployed modular, practical applications ensuring modern architectural designs and robust functionality."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Vellore Institute of Technology (VIT), Chennai",
+      "studyType": "B.Tech",
+      "area": "Computer Science and Engineering (Core)",
+      "score": "CGPA 8.38/10",
+      "startDate": "2024",
+      "endDate": "2028"
+    }
+  ],
+  "projects": [
+    {
+      "name": "CampusConnect",
+      "description": "Campus networking and utility web app for university student collaboration.",
+      "startDate": "2026",
+      "keywords": ["Web", "Frontend"],
+      "url": "https://github.com/TheRealJahaan?tab=repositories&q=CampusConnect",
+      "highlights": [
+        "Designed and developed a comprehensive campus networking and utility web application tailored for university student collaboration.",
+        "Built a highly interactive front-end interface focused on fluid layout components, real-time update structures, and asset routing.",
+        "Structured scalable client-side navigation paths ensuring smooth resource discoverability and data parsing transitions."
+      ]
+    },
+    {
+      "name": "bizflow",
+      "description": "Business productivity and workflow visualization tracker.",
+      "startDate": "2026",
+      "keywords": ["Productivity", "Data"],
+      "url": "https://github.com/TheRealJahaan?tab=repositories&q=bizflow",
+      "highlights": [
+        "Engineered an intuitive business productivity and workflow visualization tracking engine optimized for application scale.",
+        "Implemented dynamic data tracking pipelines to parse structural project metrics and handle concurrent process states natively."
+      ]
+    },
+    {
+      "name": "Quote_Generator_IOS",
+      "description": "Native SwiftUI quote generator built on MVVM.",
+      "startDate": "2026",
+      "keywords": ["Swift", "SwiftUI", "MVVM"],
+      "url": "https://github.com/TheRealJahaan?tab=repositories&q=Quote_Generator_IOS",
+      "highlights": [
+        "Developed a native SwiftUI application featuring dynamic quote generation and highly responsive user interfaces.",
+        "Designed a clean layout with modern UI elements, interactive presentation states, and fluid interface navigation.",
+        "Followed the MVVM architecture to completely isolate core business logic from UI rendering layers."
+      ]
+    }
+  ],
+  "current": {
+    "name": "Android terminal / OS environment",
+    "description": "Building a personal Android-based terminal/OS environment on a secondary Android device to explore Android internals, the Linux shell, ADB, Termux, and system-level customization."
+  },
+  "skills": [
+    {
+      "name": "Frameworks & Concepts",
+      "keywords": ["Swift", "SwiftUI", "UIKit", "MVVM", "REST APIs", "Data Structures & Algorithms"]
+    },
+    { "name": "Tools", "keywords": ["Xcode", "Git", "GitHub", "Android Studio"] },
+    {
+      "name": "AI & Machine Learning",
+      "keywords": ["Prompt Engineering", "LLM Applications", "AI-Assisted Development", "GitHub Copilot", "ChatGPT"]
+    },
+    {
+      "name": "Strengths",
+      "keywords": ["Highly Adaptable", "Quick Tech Adaptability", "Fast Learner (24-hour adaptation cycle)"]
+    }
+  ],
+  "languages": [{ "language": "English" }, { "language": "Hindi" }, { "language": "Gujarati" }]
+}
