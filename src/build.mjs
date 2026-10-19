@@ -21,6 +21,13 @@ if (errors.length) {
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 await cp(join(root, 'public'), out, { recursive: true });
+
+// Self-host Inter so the page and the PDF render identically on every machine and CI runner.
+const fonts = join(root, 'node_modules', '@fontsource-variable', 'inter', 'files');
+await mkdir(join(out, 'fonts'), { recursive: true });
+for (const file of ['inter-latin-wght-normal.woff2', 'inter-latin-wght-italic.woff2']) {
+  await cp(join(fonts, file), join(out, 'fonts', file));
+}
 await writeFile(join(out, 'index.html'), renderPage(resume, { siteUrl }));
 await writeFile(join(out, 'resume.json'), JSON.stringify(resume, null, 2));
 await writeFile(join(out, '.nojekyll'), '');

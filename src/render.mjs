@@ -164,6 +164,7 @@ ${canonical}
 ${ogUrl}
 <meta name="twitter:card" content="summary" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="styles.css" />
 <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <script type="application/ld+json">${jsonLd(resume)}</script>

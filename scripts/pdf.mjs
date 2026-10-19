@@ -17,6 +17,7 @@ try {
   const tab = await browser.newPage();
   await tab.emulateMedia({ media: 'print', colorScheme: 'light' });
   await tab.goto(pathToFileURL(page).href, { waitUntil: 'networkidle' });
+  await tab.evaluate(() => document.fonts.ready);
   await tab.pdf({
     path: join(dist, 'Jahaan_Suthar_Resume.pdf'),
     format: 'A4',
