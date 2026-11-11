@@ -23,9 +23,16 @@ await mkdir(out, { recursive: true });
 await cp(join(root, 'public'), out, { recursive: true });
 
 // Self-host Inter so the page and the PDF render identically on every machine and CI runner.
-const fonts = join(root, 'node_modules', '@fontsource-variable', 'inter', 'files');
+// Static weights, not the variable font: Chromium embeds a variable font in a PDF as Type 3
+// glyphs, which some applicant tracking systems read badly; static TrueType embeds cleanly.
+const fonts = join(root, 'node_modules', '@fontsource', 'inter', 'files');
 await mkdir(join(out, 'fonts'), { recursive: true });
-for (const file of ['inter-latin-wght-normal.woff2', 'inter-latin-wght-italic.woff2']) {
+for (const file of [
+  'inter-latin-400-normal.woff2',
+  'inter-latin-600-normal.woff2',
+  'inter-latin-700-normal.woff2',
+  'inter-latin-400-italic.woff2',
+]) {
   await cp(join(fonts, file), join(out, 'fonts', file));
 }
 await writeFile(join(out, 'index.html'), renderPage(resume, { siteUrl }));

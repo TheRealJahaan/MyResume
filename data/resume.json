@@ -2,20 +2,19 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Jahaan Suthar",
-    "label": "iOS Developer",
-    "headline": "B.Tech in Computer Science and Engineering · VIT Chennai",
+    "label": "Software Engineer",
+    "headline": "B.Tech Computer Science and Engineering · VIT Chennai (2028)",
     "email": "jahaansuthar@gmail.com",
-    "url": "https://jahaan.cc.cd",
-    "summary": "Driven Computer Science student and highly adaptive iOS Developer specializing in engineering performant, highly responsive native applications using Swift and SwiftUI. Combines strong foundational knowledge of Data Structures and MVVM architecture with cutting-edge, AI-assisted development workflows to accelerate time-to-market. Recognized as a high-velocity learner capable of breaking down, mastering, and applying complex new frameworks or production systems within 24-hour cycles to transform abstract concepts into production-ready software solutions.",
-    "location": { "countryCode": "IN", "region": "India" },
+    "url": "https://therealjahaan.github.io/MyResume/",
+    "summary": "Computer science student at VIT Chennai who builds full-stack web apps and backend services with React, Node.js, TypeScript, Python and SQL, and ships them with tests, CI and documentation. Looking for a Summer 2027 software engineering internship.",
+    "location": { "city": "Chennai", "countryCode": "IN", "region": "Chennai, India" },
     "profiles": [
       { "network": "GitHub", "username": "TheRealJahaan", "url": "https://github.com/TheRealJahaan" },
       {
         "network": "LinkedIn",
         "username": "jahaan-suthar",
         "url": "https://www.linkedin.com/in/jahaan-suthar-648320320"
-      },
-      { "network": "Portfolio", "username": "jahaan.cc.cd", "url": "https://jahaan.cc.cd" }
+      }
     ]
   },
   "work": [
@@ -24,17 +23,17 @@
       "position": "Software Development Intern",
       "startDate": "2026-05",
       "highlights": [
-        "Developed clean, high-performance logic across Python programming assignments and production software concepts.",
-        "Collaborated on algorithmic problem-solving paradigms to systematically optimize core data structures.",
-        "Built and deployed modular, practical applications ensuring modern architectural designs and robust functionality."
+        "Solve Python programming assignments built around core data structures and algorithms, with a focus on clean, readable code.",
+        "Build small, modular Python applications in the program’s hands-on modules.",
+        "Work through algorithmic problem sets with peers, comparing approaches to improve time and space complexity."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Vellore Institute of Technology (VIT), Chennai",
+      "institution": "Vellore Institute of Technology, Chennai",
       "studyType": "B.Tech",
-      "area": "Computer Science and Engineering (Core)",
+      "area": "Computer Science and Engineering",
       "score": "CGPA 8.38/10",
       "startDate": "2024",
       "endDate": "2028"
@@ -42,59 +41,70 @@
   ],
   "projects": [
     {
-      "name": "CampusConnect",
-      "description": "Campus networking and utility web app for university student collaboration.",
-      "startDate": "2026",
-      "keywords": ["Web", "Frontend"],
-      "url": "https://github.com/TheRealJahaan?tab=repositories&q=CampusConnect",
+      "name": "Steward Crew",
+      "description": "AI agents that triage open-source contributors, with a human in the loop. Built for the Flip the Switch hackathon; write-up on dev.to and a 3-minute demo on YouTube.",
+      "startDate": "2026-11",
+      "keywords": ["Python", "SQLite", "GitHub REST API", "WebSockets", "Claude Code", "Discord", "Slack"],
+      "url": "https://github.com/TheRealJahaan/steward-crew",
       "highlights": [
-        "Designed and developed a comprehensive campus networking and utility web application tailored for university student collaboration.",
-        "Built a highly interactive front-end interface focused on fluid layout components, real-time update structures, and asset routing.",
-        "Structured scalable client-side navigation paths ensuring smooth resource discoverability and data parsing transitions."
+        "Built 3 AI agents across Discord and Slack for the Flip the Switch hackathon (WeMakeDevs): one answers newcomers from the real codebase, one writes maintainers a daily triage of claims and PRs, and one drafts PR reviews.",
+        "Designed the safety model so no AI can act on GitHub: agents only file proposals, and a plain-Python \"Ledger\" service holding the only GitHub token acts only after a maintainer types approve, with a full audit log and undo.",
+        "Encoded project rules (one open claim per newcomer, claims stale after 48 hours, PR spam checks) as deterministic Python driven by a YAML policy, over a shared SQLite store; ~2,800-line package with 32 pytest tests."
       ]
     },
     {
-      "name": "bizflow",
-      "description": "Business productivity and workflow visualization tracker.",
-      "startDate": "2026",
-      "keywords": ["Productivity", "Data"],
-      "url": "https://github.com/TheRealJahaan?tab=repositories&q=bizflow",
+      "name": "BizFlow",
+      "description": "GST invoicing and cash-flow platform for small businesses.",
+      "startDate": "2026-03",
+      "endDate": "2026-04",
+      "keywords": ["TypeScript", "React", "Next.js", "Node.js", "Express", "PostgreSQL", "JWT", "Razorpay"],
+      "url": "https://github.com/TheRealJahaan/bizflow",
       "highlights": [
-        "Engineered an intuitive business productivity and workflow visualization tracking engine optimized for application scale.",
-        "Implemented dynamic data tracking pipelines to parse structural project metrics and handle concurrent process states natively."
+        "Developed a monorepo with a Next.js / React dashboard and an Express REST API on PostgreSQL (pooled connections, indexed foreign keys) for invoices, payments and business records.",
+        "Wrote a shared GST engine package that computes CGST + SGST for intra-state and IGST for inter-state invoices, and generates UPI QR codes for payment.",
+        "Secured the API with JWT authentication and role-based access control, and verified Razorpay payment webhooks with HMAC-SHA256 signatures."
       ]
     },
     {
-      "name": "Quote_Generator_IOS",
-      "description": "Native SwiftUI quote generator built on MVVM.",
-      "startDate": "2026",
-      "keywords": ["Swift", "SwiftUI", "MVVM"],
-      "url": "https://github.com/TheRealJahaan?tab=repositories&q=Quote_Generator_IOS",
+      "name": "URL Shortener REST API",
+      "description": "Production-style REST API for short links.",
+      "startDate": "2026-06",
+      "keywords": ["TypeScript", "Node.js", "Express 5", "Zod", "SQLite", "Vitest", "Docker", "GitHub Actions"],
+      "url": "https://github.com/TheRealJahaan/BAckENd",
       "highlights": [
-        "Developed a native SwiftUI application featuring dynamic quote generation and highly responsive user interfaces.",
-        "Designed a clean layout with modern UI elements, interactive presentation states, and fluid interface navigation.",
-        "Followed the MVVM architecture to completely isolate core business logic from UI rendering layers."
+        "Implemented a REST API for short links with JWT auth, custom slugs, expiry and click analytics; visitor IPs are stored only as salted SHA-256 hashes.",
+        "Validated every request with Zod schemas that also generate the OpenAPI 3.1 docs; added rate limiting, security headers, structured logging and health checks.",
+        "Wrote 46 unit and integration tests (~95% coverage), each on a fresh in-memory database, run in GitHub Actions CI; packaged as a Docker image."
+      ]
+    },
+    {
+      "name": "DJ Cartel",
+      "description": "Multi-vendor e-commerce store.",
+      "startDate": "2026-04",
+      "keywords": ["React", "Vite", "Node.js", "Express", "Prisma", "JWT"],
+      "url": "https://github.com/TheRealJahaan/DJ-Cartel",
+      "highlights": [
+        "Developed a React storefront with product catalog, cart and wishlist (Context + reducer state) and Google sign-in, backed by an Express REST API with Prisma and JWT-protected cart routes."
       ]
     }
   ],
-  "current": {
-    "name": "Android terminal / OS environment",
-    "description": "Building a personal Android-based terminal/OS environment on a secondary Android device to explore Android internals, the Linux shell, ADB, Termux, and system-level customization."
-  },
   "skills": [
     {
-      "name": "Frameworks & Concepts",
-      "keywords": ["Swift", "SwiftUI", "UIKit", "MVVM", "REST APIs", "Data Structures & Algorithms"]
+      "name": "Languages",
+      "keywords": ["Java", "Python", "TypeScript", "JavaScript", "SQL", "C++", "Swift", "HTML", "CSS"]
     },
-    { "name": "Tools", "keywords": ["Xcode", "Git", "GitHub", "Android Studio"] },
+    { "name": "Frameworks", "keywords": ["React", "Next.js", "Node.js", "Express", "Prisma", "Zod", "SwiftUI"] },
     {
-      "name": "AI & Machine Learning",
-      "keywords": ["Prompt Engineering", "LLM Applications", "AI-Assisted Development", "GitHub Copilot", "ChatGPT"]
+      "name": "Backend and databases",
+      "keywords": ["REST APIs", "JWT authentication", "OpenAPI", "WebSockets", "PostgreSQL", "SQLite"]
     },
     {
-      "name": "Strengths",
-      "keywords": ["Highly Adaptable", "Quick Tech Adaptability", "Fast Learner (24-hour adaptation cycle)"]
+      "name": "Tools",
+      "keywords": ["Git", "GitHub", "GitHub Actions (CI)", "Docker", "Vitest", "pytest", "Claude Code", "Xcode"]
+    },
+    {
+      "name": "Fundamentals",
+      "keywords": ["Data structures and algorithms (LeetCode solutions in Java)", "MVVM"]
     }
-  ],
-  "languages": [{ "language": "English" }, { "language": "Hindi" }, { "language": "Gujarati" }]
+  ]
 }
