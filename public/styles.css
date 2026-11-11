@@ -408,6 +408,8 @@ h3 {
   h2 {
     font-size: 9pt;
     margin-bottom: 6px;
+    /* Wide tracking makes PDF text extraction split headings into letters ("E D U C A T I O N"). */
+    letter-spacing: 0.02em;
   }
   h3 {
     font-size: 10.5pt;
@@ -451,8 +453,9 @@ h3 {
   h2 {
     break-after: avoid;
   }
+  /* The one-page PDF leads with experience; the summary stays on the web page. */
+  #summary,
   .card .desc,
-  .card .tags,
   .no-print,
   .skip {
     display: none !important;
@@ -480,5 +483,30 @@ h3 {
   }
   .contacts a[href^='http']::after {
     content: none;
+  }
+  /* Project tech stacks print as a plain comma-separated line under the title, like the skills rows. */
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card > header {
+    order: -2;
+  }
+  .card .tags {
+    order: -1;
+    gap: 0;
+    margin: 1px 0 0;
+    color: var(--muted);
+  }
+  .card .tags li {
+    background: none;
+    color: var(--muted);
+    font-weight: 400;
+    font-size: 8.8pt;
+    padding: 0;
+    border-radius: 0;
+  }
+  .card .tags li + li::before {
+    content: ', ';
   }
 }

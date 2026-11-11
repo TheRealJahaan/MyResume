@@ -59,7 +59,8 @@ function renderContacts(basics) {
     items.push(`<li><a href="mailto:${esc(basics.email)}">${icon('Email')}<span>${esc(basics.email)}</span></a></li>`);
   }
   for (const p of basics.profiles ?? []) {
-    const label = p.network === 'Portfolio' ? p.username : `${p.network}`;
+    // Show the address itself, not just the network name, so it survives printing and ATS parsing.
+    const label = p.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
     items.push(
       `<li><a href="${esc(p.url)}" rel="me noopener" target="_blank">${icon(p.network)}<span>${esc(label)}</span></a></li>`,
     );
