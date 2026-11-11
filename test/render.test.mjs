@@ -43,9 +43,13 @@ test('validator reports missing and malformed fields', () => {
 
 test('rendered page contains every section and entry', () => {
   const html = renderPage(resume, { builtAt: new Date('2026-10-19') });
-  for (const id of ['summary', 'experience', 'education', 'projects', 'current', 'skills']) {
+  for (const id of ['summary', 'experience', 'education', 'projects', 'skills']) {
     assert.match(html, new RegExp(`<section id="${id}"`));
   }
+  // "Currently Working On" is optional: it renders only when the data has it.
+  assert.equal(html.includes('<section id="current"'), Boolean(resume.current));
+  const withCurrent = renderPage({ ...resume, current: { name: 'Side project', description: 'Exploring.' } });
+  assert.match(withCurrent, /<section id="current"/);
   for (const p of resume.projects) assert.ok(html.includes(esc(p.name)), `missing project ${p.name}`);
   assert.ok(html.includes(esc(resume.work[0].name)));
   assert.match(html, /<h1>Jahaan Suthar<\/h1>/);
